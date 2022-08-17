@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { NgModel } from '@angular/forms';
+import { NgModule } from '@angular/core';
+
 
 @Component({
   selector: 'app-home',
