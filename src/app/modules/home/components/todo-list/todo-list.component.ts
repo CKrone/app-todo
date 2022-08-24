@@ -11,15 +11,14 @@ import { first, last } from 'rxjs';
 })
 export class TodoListComponent implements OnInit {
 
-  public taskList: Array<TaskList> = [ ];
+  public taskList: Array<TaskList> = JSON.parse(localStorage.getItem('list') || '[]');
 
   constructor() { }
 
   ngOnInit(): void {
   }
   ngDoCheck() {
-    this.taskList.sort((first, last) => Number(first.checked) - Number(last.checked));
-
+   this.setLocalStorage();
   }
   public setEmitTaskList(event: string){
     //Inserindo task no array
@@ -47,6 +46,14 @@ export class TodoListComponent implements OnInit {
       }
     }
     
+  }
+
+  public setLocalStorage () {
+    if(this.taskList){
+      this.taskList.sort((first, last) => Number(first.checked) - Number(last.checked));
+      //Salvar no Local Storage a lista de task
+      localStorage.setItem("list", JSON.stringify(this.taskList));
+      }
   }
 
 }
