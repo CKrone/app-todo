@@ -1,27 +1,32 @@
 # AppTodo
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.2.
+<h2> Aplicação Web desenvolvida com exemplo feito no curso da Udemy: Curso de Angular 2 (v13+) Typescript do Básico ao Avançado
+ ministrado pelo Dener Troquatte.</h2>
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+<h3>Sobre a aplicação:</h3>
+  - Serve para você cadastrar, editar e deletar suas tarefas. Também é possível sinalizar elas como finalizadas, através de um Checkbox. A lista é salva no LocalStorage.
 
-## Code scaffolding
+Tela Inicial da Aplicação.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+![image](https://user-images.githubusercontent.com/86797383/186780829-953c980f-31c7-4edf-a753-9bc615d5df78.png)
 
-## Build
+Tela com tarefas.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+![image](https://user-images.githubusercontent.com/86797383/186781298-993a45ce-5ce6-4fe7-941c-006db27970b0.png)
 
-## Running unit tests
+- Quando houver tarefas adicionadas na lista, um botão de "Deletar Todos" aparece como opção, para apagar todas as tarefas. Também é possível deletar apenas a tarefa específica.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Tela com tarefas finalizadas.
 
-## Running end-to-end tests
+![image](https://user-images.githubusercontent.com/86797383/186781484-e03b38a5-5d56-4a21-ac0c-9fc43781fcd7.png)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Quando finalizar as tarefas, marcando o checkbox, a tarefa será direcionada para baixo na lista.
 
-## Further help
+![image](https://user-images.githubusercontent.com/86797383/186781604-5700f341-fdf1-4012-9f28-f77840d20f72.png)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Caso edite uma tarefa apagando seu texto, será exibido um alerta informando está ação e pedindo se o usuário deseja na verdade deletar a tarefa.
+
+![image](https://user-images.githubusercontent.com/86797383/186781675-4ca70fd0-02ac-459b-a59b-e1e3b2457333.png)
+
+Também é feito a validação para não deixar o usuário salvar tarefas vazias ou apenas espaços.
